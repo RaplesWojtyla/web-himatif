@@ -5,12 +5,12 @@
   --foreground: #171717;
 }
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -19,8 +19,25 @@
   }
 }
 
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-himatif-dark: #0f172a;    /* Slate 900 */
+  --color-himatif-primary: #1e3a8a; /* Blue 900 */
+  --color-himatif-accent: #fbbf24;  /* Amber 400 */
+  --color-himatif-light: #f8fafc;   /* Slate 50 */
+
+  --font-sans: "Inter", sans-serif;
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans); 
 }
