@@ -113,7 +113,7 @@ const App: React.FC = () => {
 								<div className="relative overflow-hidden rounded-2xl mb-4 mx-auto w-full aspect-square">
 									<img src={member.imageUrl} alt={member.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0" />
 									<div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-4">
-										<span className="text-white text-xs font-bold tracking-widest uppercase">Connect</span>
+										<span className="text-white text-xs font-bold tracking-widest uppercase"></span>
 									</div>
 								</div>
 								<h3 className="text-lg font-bold text-himatif-dark">{member.name}</h3>
@@ -126,35 +126,49 @@ const App: React.FC = () => {
 
 			{/* DIVISI SECTION */}
 			<section id="divisions" className="py-20 bg-himatif-dark text-white">
-				<div className="container mx-auto px-4 md:px-8">
-					<div className="flex justify-between items-end mb-12">
-						<div>
-							<div className="text-himatif-accent font-bold mb-2 uppercase tracking-widest text-sm">Struktur Organisasi</div>
-							<h2 className="text-3xl md:text-4xl font-bold">Divisi Kami</h2>
-						</div>
-						<div className="hidden md:block text-slate-400 text-sm max-w-xs text-right">
-							Fokus area pengembangan untuk menunjang softskill dan hardskill anggota.
-						</div>
-					</div>
-
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-						{DIVISIONS.map((div) => (
-							<div key={div.id} className="bg-slate-800 rounded-xl overflow-hidden hover:bg-slate-700 transition-colors group cursor-pointer border border-slate-700">
-								<div className="h-48 overflow-hidden">
-									<img src={div.imageUrl} alt={div.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-								</div>
-								<div className="p-6">
-									<h3 className="text-xl font-bold text-white mb-2 group-hover:text-himatif-accent transition-colors">{div.name}</h3>
-									<p className="text-slate-400 text-sm mb-4 line-clamp-3">{div.description}</p>
-									<span className="text-xs font-bold text-himatif-accent uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
-										Selengkapnya <ArrowRight size={12} />
-									</span>
-								</div>
-							</div>
-						))}
-					</div>
+	<div className="container mx-auto px-4 md:px-8">
+		<div className="flex justify-between items-end mb-12">
+			<div>
+				<div className="text-himatif-accent font-bold mb-2 uppercase tracking-widest text-sm">
+					Struktur Organisasi
 				</div>
-			</section>
+				<h2 className="text-3xl md:text-4xl font-bold">Divisi Kami</h2>
+			</div>
+			<div className="hidden md:block text-slate-400 text-sm max-w-xs text-right">
+				Fokus area pengembangan untuk menunjang softskill dan hardskill anggota.
+			</div>
+		</div>
+
+		<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+			{DIVISIONS.map((div) => (
+				<Link
+					key={div.id}
+					href={`/divisions/${div.id}`}
+					className="bg-slate-800 rounded-xl overflow-hidden hover:bg-slate-700 transition-colors group cursor-pointer border border-slate-700 block"
+				>
+					<div className="h-48 overflow-hidden">
+						<img
+							src={div.imageUrl}
+							alt={div.name}
+							className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+						/>
+					</div>
+					<div className="p-6">
+						<h3 className="text-xl font-bold text-white mb-2 group-hover:text-himatif-accent transition-colors">
+							{div.name}
+						</h3>
+						<p className="text-slate-400 text-sm mb-4 line-clamp-3">
+							{div.description}
+						</p>
+						<span className="text-xs font-bold text-himatif-accent uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+							Selengkapnya <ArrowRight size={12} />
+						</span>
+					</div>
+				</Link>
+			))}
+		</div>
+	</div>
+</section>
 
 			{/* EVENTS SECTION (Horizontal Scroll) */}
 			<section id="events" className="py-20 bg-slate-50 overflow-hidden">

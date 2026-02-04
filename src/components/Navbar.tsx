@@ -15,14 +15,14 @@ const Navbar: React.FC = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const navLinks = [
-        { name: 'Beranda', href: '#home' },
-        { name: 'Tentang', href: '#about' },
-        { name: 'Divisi', href: '#divisions' },
-        { name: 'Event', href: '#events' },
-        { name: 'Shop', href: '#shop' },
-        { name: 'Berita', href: '#news' },
-    ];
+const navLinks = [
+  { name: 'Beranda', href: '/#home' },
+  { name: 'Tentang', href: '/#about' },
+  { name: 'Divisi', href: '/#divisions' },
+  { name: 'Event', href: '/#events' },
+  { name: 'Shop', href: '/#shop' },
+  { name: 'Berita', href: '/#news' },
+];
 
     return (
         <nav
