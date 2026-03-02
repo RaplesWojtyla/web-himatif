@@ -16,12 +16,12 @@ const Navbar: React.FC = () => {
     }, []);
 
 const navLinks = [
-  { name: 'Beranda', href: '/#home' },
-  { name: 'Tentang', href: '/#about' },
-  { name: 'Divisi', href: '/#divisions' },
+  { name: 'Home', href: '/#home' },
+  { name: 'About', href: '/#about' },
+  { name: 'Division', href: '/#divisions' },
   { name: 'Event', href: '/#events' },
   { name: 'Shop', href: '/#shop' },
-  { name: 'Berita', href: '/#news' },
+//   { name: 'News', href: '/#news' },
 ];
 
     return (
@@ -51,12 +51,12 @@ const navLinks = [
                             {link.name}
                         </a>
                     ))}
-                    <a
+                    {/* <a
                         href="#shop"
                         className="flex items-center gap-2 bg-himatif-accent text-himatif-dark px-4 py-2 rounded-full font-bold text-sm hover:bg-yellow-300 transition-colors"
                     >
                         <ShoppingBag size={16} /> Store
-                    </a>
+                    </a> */}
                 </div>
 
                 {/* Mobile Toggle */}

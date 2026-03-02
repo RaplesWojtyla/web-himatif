@@ -10,8 +10,9 @@ const App: React.FC = () => {
 		<div className="min-h-screen font-sans selection:bg-himatif-accent selection:text-himatif-dark">
 			<Navbar />
 
-			{/* HERO SECTION */}
-			<section id="home" className="relative h-screen flex items-center justify-center overflow-hidden bg-himatif-dark">
+			{/* HERO + STATS SECTION */}
+			<section id="home" className="relative min-h-screen flex flex-col overflow-hidden bg-himatif-dark">
+				{/* Background */}
 				<div className="absolute inset-0 z-0 opacity-30">
 					<img
 						src="https://picsum.photos/id/180/1920/1080"
@@ -21,42 +22,53 @@ const App: React.FC = () => {
 				</div>
 				<div className="absolute inset-0 bg-gradient-to-b from-himatif-dark/50 via-himatif-dark/80 to-himatif-dark z-10"></div>
 
-				<div className="container mx-auto px-4 z-20 text-center">
-					<h2 className="text-himatif-accent font-bold tracking-widest text-sm md:text-base mb-4 animate-bounce">WELCOME TO OFFICIAL WEBSITE</h2>
-					<h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
-						HIMPUNAN MAHASISWA <br />
-						<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-himatif-accent">TEKNOLOGI INFORMASI</span>
-					</h1>
-					<p className="text-slate-300 max-w-2xl mx-auto mb-10 text-lg">
-						Wadah aspirasi, kreasi, dan inovasi bagi seluruh mahasiswa Teknologi Informasi untuk mewujudkan masa depan digital yang lebih baik.
-					</p>
-					<div className="flex flex-col md:flex-row gap-4 justify-center">
-						<Link href="#about" className="px-8 py-3 bg-himatif-accent text-himatif-dark font-bold rounded-full hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-lg">
-							Tentang Kami
-						</Link>
-						<Link href="#events" className="px-8 py-3 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-himatif-dark transition-all transform hover:scale-105">
-							Program Kerja
-						</Link>
+				{/* HERO CONTENT */}
+				<div className="flex-1 flex items-center justify-center relative z-20">
+					<div className="container mx-auto px-4 text-center">
+						<h2 className="text-himatif-accent font-bold tracking-widest text-sm md:text-base mb-4 animate-bounce">
+							WELCOME TO OFFICIAL WEBSITE
+						</h2>
+						<h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+							HIMPUNAN MAHASISWA <br />
+							<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-himatif-accent">
+								TEKNOLOGI INFORMASI
+							</span>
+						</h1>
+						<p className="text-slate-300 max-w-2xl mx-auto mb-10 text-lg">
+							Wadah aspirasi, kreasi, dan inovasi bagi seluruh mahasiswa Teknologi Informasi untuk mewujudkan masa depan digital yang lebih baik.
+						</p>
+						<div className="flex flex-col md:flex-row gap-4 justify-center">
+							<Link
+								href="#about"
+								className="px-8 py-3 bg-himatif-accent text-himatif-dark font-bold rounded-full hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-lg"
+							>
+								About Us
+							</Link>
+						</div>
 					</div>
 				</div>
-			</section>
 
-			{/* STATS BAR */}
-			<div className="bg-white shadow-xl relative z-30 -mt-16 container mx-auto rounded-xl p-8 grid grid-cols-2 md:grid-cols-4 gap-8 md:mx-auto max-w-6xl border-b-4 border-himatif-accent">
-				{STATS.map((stat, idx) => (
-					<div key={idx} className="text-center border-r last:border-0 border-slate-100">
-						<div className="text-3xl md:text-4xl font-black text-himatif-primary mb-1">{stat.value}</div>
-						<div className="text-xs md:text-sm text-slate-500 font-medium uppercase tracking-wider">{stat.label}</div>
-					</div>
-				))}
-			</div>
+				{/* STATS BAR */}
+				<div className="relative z-20 bg-white shadow-xl container mx-auto rounded-t-xl p-8 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl border-b-4 border-himatif-accent">
+					{STATS.map((stat, idx) => (
+						<div key={idx} className="text-center border-r last:border-0 border-slate-100">
+							<div className="text-3xl md:text-4xl font-black text-himatif-primary mb-1">
+								{stat.value}
+							</div>
+							<div className="text-xs md:text-sm text-slate-500 font-medium uppercase tracking-wider">
+								{stat.label}
+							</div>
+						</div>
+					))}
+				</div>
+			</section>
 
 			{/* ABOUT & VISI MISI */}
 			<section id="about" className="py-20 bg-slate-50">
 				<div className="container mx-auto px-4 md:px-8">
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
 						<div>
-							<div className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-bold mb-4">TENTANG KAMI</div>
+							<div className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-bold mb-4">About Us</div>
 							<h2 className="text-3xl md:text-4xl font-bold text-himatif-dark mb-6">Latar Belakang HIMATIF</h2>
 							<p className="text-slate-600 leading-relaxed mb-6">
 								Himpunan Mahasiswa Teknologi Informasi (HIMATIF) didirikan sebagai respons terhadap kebutuhan wadah pengembangan diri mahasiswa di luar kegiatan akademik. Kami hadir untuk menjembatani aspirasi mahasiswa dengan pihak prodi, serta menjadi inkubator bakat di bidang teknologi.
@@ -104,7 +116,7 @@ const App: React.FC = () => {
 				<div className="container mx-auto px-4 md:px-8">
 					<div className="text-center mb-16">
 						<h2 className="text-3xl font-bold text-himatif-dark mb-2">Badan Pengurus Harian</h2>
-						<p className="text-slate-500">Nakhoda kapal HIMATIF periode 2024/2025</p>
+						<p className="text-slate-500">BPH HIMATIF periode 2025/2026</p>
 					</div>
 
 					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -135,7 +147,7 @@ const App: React.FC = () => {
 				<h2 className="text-3xl md:text-4xl font-bold">Divisi Kami</h2>
 			</div>
 			<div className="hidden md:block text-slate-400 text-sm max-w-xs text-right">
-				Fokus area pengembangan untuk menunjang softskill dan hardskill anggota.
+				Struktur divisi HIMATIF periode 2025/2026.
 			</div>
 		</div>
 
@@ -174,10 +186,10 @@ const App: React.FC = () => {
 			<section id="events" className="py-20 bg-slate-50 overflow-hidden">
 				<div className="container mx-auto px-4 md:px-8 relative">
 					<div className="mb-10 flex justify-between items-center">
-						<h2 className="text-3xl font-bold text-himatif-dark">Program Kerja & Event</h2>
-						<Link href="#" className="text-himatif-primary font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+						<h2 className="text-3xl font-bold text-himatif-dark">Event</h2>
+						{/* <Link href="#" className="text-himatif-primary font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
 							Lihat Semua <ArrowRight size={16} />
-						</Link>
+						</Link> */}
 					</div>
 
 					<div className="flex overflow-x-auto pb-8 gap-6 snap-x md:grid md:grid-cols-3 md:overflow-visible">
@@ -186,7 +198,7 @@ const App: React.FC = () => {
 								<div className="h-48 overflow-hidden relative">
 									<img src={event.imageUrl} alt={event.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
 									<div className="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold text-himatif-dark shadow-sm">
-										Coming Soon
+										Completed
 									</div>
 								</div>
 								<div className="p-6">
@@ -211,18 +223,18 @@ const App: React.FC = () => {
 				<div className="container mx-auto px-4 md:px-8">
 					<div className="text-center mb-12">
 						<h2 className="text-3xl font-bold text-himatif-dark">Himatif Shop</h2>
-						<p className="text-slate-500 mt-2">Dukung kami dengan membeli merchandise resmi</p>
+						<p className="text-slate-500 mt-2">Dukung kami dengan membeli merchandise resmi.</p>
 					</div>
 
 					{/* Categories */}
-					<div className="flex flex-wrap justify-center gap-4 mb-12">
+					{/* <div className="flex flex-wrap justify-center gap-4 mb-12">
 						{SHOP_CATEGORIES.map((cat, idx) => (
 							<div key={idx} className="flex flex-col items-center justify-center w-24 h-24 bg-slate-50 rounded-xl border border-slate-100 hover:border-himatif-accent hover:shadow-md cursor-pointer transition-all group">
 								<span className="text-2xl mb-2 group-hover:scale-110 transition-transform">{cat.icon}</span>
 								<span className="text-xs font-medium text-slate-600">{cat.name}</span>
 							</div>
 						))}
-					</div>
+					</div> */}
 
 					{/* Product Grid */}
 					<div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -243,16 +255,16 @@ const App: React.FC = () => {
 						))}
 					</div>
 
-					<div className="mt-12 text-center">
+					{/* <div className="mt-12 text-center">
 						<Link href="#" className="inline-block px-8 py-3 bg-slate-900 text-white font-bold rounded-full hover:bg-slate-800 transition-colors">
 							Lihat Semua Produk
 						</Link>
-					</div>
+					</div> */}
 				</div>
 			</section>
 
 			{/* NEWS SECTION */}
-			<section id="news" className="py-20 bg-slate-50 border-t border-slate-200">
+			{/* <section id="news" className="py-20 bg-slate-50 border-t border-slate-200">
 				<div className="container mx-auto px-4 md:px-8">
 					<div className="flex justify-between items-center mb-10">
 						<div>
@@ -294,7 +306,7 @@ const App: React.FC = () => {
 						))}
 					</div>
 				</div>
-			</section>
+			</section> */}
 
 			{/* CTA SECTION */}
 			<section className="py-20 bg-himatif-primary relative overflow-hidden">

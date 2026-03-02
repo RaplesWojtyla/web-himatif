@@ -3,7 +3,7 @@ import { Division, EventItem, Member, NewsItem, Product } from '../lib/types';
 export const STATS = [
   { label: 'Anggota', value: '200+' },
   { label: 'Item Shop', value: '20+' },
-  { label: 'Berita', value: '12' },
+  { label: 'Partnership', value: '12' },
   { label: 'Event Selesai', value: '8' },
 ];
 
@@ -408,36 +408,37 @@ export const DIVISIONS: Division[] = [
 export const EVENTS: EventItem[] = [
   {
     id: 1,
-    title: "Tech Seminar 2024",
-    date: "12 Oktober 2024",
+    title: "Fun & Fit",
+    date: "20 September 2025",
     description: "Seminar teknologi membahas AI dan Masa Depan Coding.",
-    imageUrl: "https://picsum.photos/id/20/400/600"
+    imageUrl: "/images/funnfit.jpg"
   },
   {
     id: 2,
-    title: "Coding Bootcamp",
-    date: "20 November 2024",
-    description: "Pelatihan intensif ReactJS untuk pemula selama 3 hari.",
-    imageUrl: "https://picsum.photos/id/26/400/600"
+    title: "Latihan Kepemimpinan",
+    date: "18 Oktober 2025",
+    description: "Pelatihan kepemimpinan untuk calon pengurus HIMATIF.",
+    imageUrl: "/images/lk.jpg"
   },
   {
     id: 3,
-    title: "HIMATIF Cup",
-    date: "15 Desember 2024",
-    description: "Turnamen E-Sport Mobile Legends dan Futsal antar angkatan.",
-    imageUrl: "https://picsum.photos/id/96/400/600"
+    title: "IT Showcase",
+    date: "6 Desember 2025",
+    description: "Pameran karya mahasiswa Teknologi Informasi.",
+    imageUrl: "/images/showcase.jpg"
   }
 ];
 
 export const PRODUCTS: Product[] = [
-  { id: 1, name: "Karsa T-Shirt", price: "Rp 85.000", category: "Baju", imageUrl: "https://picsum.photos/id/90/300/300" },
-  { id: 2, name: "HIMATIF Lanyard", price: "Rp 25.000", category: "Aksesoris", imageUrl: "https://picsum.photos/id/100/300/300" },
-  { id: 3, name: "Sticker Pack V1", price: "Rp 10.000", category: "Aksesoris", imageUrl: "https://picsum.photos/id/103/300/300" },
-  { id: 4, name: "Totebag Canvas", price: "Rp 45.000", category: "Tas", imageUrl: "https://picsum.photos/id/104/300/300" },
-  { id: 5, name: "Tumbler Custom", price: "Rp 60.000", category: "Tumbler", imageUrl: "https://picsum.photos/id/106/300/300" },
-  { id: 6, name: "Jaket Angkatan", price: "Rp 150.000", category: "Baju", imageUrl: "https://picsum.photos/id/110/300/300" },
-  { id: 7, name: "Gantungan Kunci", price: "Rp 15.000", category: "Aksesoris", imageUrl: "https://picsum.photos/id/145/300/300" },
-  { id: 8, name: "Topi Himatif", price: "Rp 50.000", category: "Baju", imageUrl: "https://picsum.photos/id/158/300/300" },
+  { id: 1, name: "Crochet Bakery Keychain", price: "Rp 20.000", category: "Keychain", imageUrl: "/images/shop/kc1.png" },
+  { id: 2, name: "Crochet Star Keychain", price: "Rp 20.000", category: "Keychain", imageUrl: "/images/shop/kc2.png" },
+  { id: 3, name: "Crochet Bow Keychain", price: "Rp 20.000", category: "Keychain", imageUrl: "/images/shop/kc3.png" },
+  { id: 4, name: "Flower Bouqet Crochet", price: "Rp 90.000", category: "Bouqet", imageUrl: "/images/shop/buket1.png" },
+  { id: 5, name: "Bouqet Flower 1", price: "Rp 125.000", category: "Bouqet", imageUrl: "/images/shop/buket2.png" },
+  { id: 6, name: "Bouqet Flower 2", price: "Rp 125.000", category: "Bouqet", imageUrl: "/images/shop/buket3.png" },
+  { id: 7, name: "Bouqet Flower 3", price: "Rp 115.000", category: "Bouqet", imageUrl: "/images/shop/buket4.png" },
+  { id: 8, name: "Bouqet Flower 4", price: "Rp 80.000", category: "Bouqet", imageUrl: "/images/shop/buket5.png" },
+
 ];
 
 export const NEWS: NewsItem[] = [
