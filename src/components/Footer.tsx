@@ -26,11 +26,11 @@ const Footer: React.FC = () => {
                         <ul className="space-y-3 text-slate-300 text-sm">
                             <li className="flex items-start gap-3">
                                 <MapPin size={18} className="text-himatif-accent shrink-0 mt-1" />
-                                <span>Gedung Student Center Lt. 2, Kampus Pusat, Jl. Teknologi No. 1, Jakarta.</span>
+                                <span>: Jl. Alumni No. 3 Gedung B lantai 4. Kampus USU, Padang Bulan, Medan 20155.</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Mail size={18} className="text-himatif-accent shrink-0" />
-                                <span>sekretariat@himatif.org</span>
+                                <span>: Himatifusu.medan@gmail.com</span>
                             </li>
                         </ul>
                     </div>
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
                     <div className="space-y-4">
                         <h3 className="text-lg font-bold text-himatif-accent uppercase tracking-wider">Sosial Media</h3>
                         <div className="flex gap-4">
-                            <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-himatif-accent hover:text-himatif-dark transition-all">
+                            <a href="https://www.instagram.com/himatifusu/" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-himatif-accent hover:text-himatif-dark transition-all">
                                 <Instagram size={20} />
                             </a>
                             <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-himatif-accent hover:text-himatif-dark transition-all">
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
                             </a>
                         </div>
                         <p className="text-xs text-slate-500 mt-8">
-                            © 2024 HIMATIF. All rights reserved.
+                            © 2025 HIMATIF. All rights reserved.
                         </p>
                     </div>
 
