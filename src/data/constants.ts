@@ -19,9 +19,9 @@ export const VISI_MISI = {
 };
 
 export const PENGURUS_HARIAN: Member[] = [
-  { id: 1, name: "Naurah dan Nazwa", role: "Kesekretariatan", imageUrl: "/images/divisions/bph/kesekretariatan.jpg" },
-  { id: 2, name: "Ilyas, Qhanakin dan Petra", role: "Wakil Ketua", imageUrl: "/images/divisions/bph/ketua.jpg" },
-  { id: 3, name: "Jesica dan Yehezkiel", role: "Kebendaharaan", imageUrl: "/images/divisions/bph/kebendaharaan.jpg" },
+  { id: 1, name: "Naurah dan Nazwa", role: "Kesekretariatan", imageUrl: "/images/divisions/bph/kesekretariatan.JPG" },
+  { id: 2, name: "Ilyas, Qhanakin dan Petra", role: "Ketua", imageUrl: "/images/divisions/bph/ketua.JPG" },
+  { id: 3, name: "Jesica dan Yehezkiel", role: "Kebendaharaan", imageUrl: "/images/divisions/bph/kebendaharaan.JPG" },
 ];
 
 export const DIVISIONS: Division[] = [
@@ -31,67 +31,67 @@ export const DIVISIONS: Division[] = [
     description: "Pengembangan Sumber Daya Manusia fokus pada kaderisasi dan peningkatan soft skill anggota.",
     longDescription:
       "Divisi PSDM bertanggung jawab dalam proses kaderisasi, pelatihan kepemimpinan, serta pengembangan soft skill anggota HIMATIF agar siap menghadapi dunia profesional.",
-    imageUrl: "/images/divisions/psdm/cover_psdm.jpg",
+    imageUrl: "/images/divisions/psdm/cover_psdm.JPG",
     members: [
       {
         id: 1,
         name: "Paskal dan Rahmaini",
         role: "Koordinator dan Divisi",
-        imageUrl: "/images/divisions/psdm/members/paskal_rahmaini.jpg"
+        imageUrl: "/images/divisions/psdm/members/paskal_rahmaini.JPG"
       },
       {
         id: 2,
         name: "Samuel",
         role: "Anggota",
-        imageUrl: "/images/divisions/psdm/members/samuel.jpg"
+        imageUrl: "/images/divisions/psdm/members/samuel.JPG"
       },
       {
         id: 3,
         name: "Sutanto",
         role: "Anggota",
-        imageUrl: "/images/divisions/psdm/members/sutanto.jpg"
+        imageUrl: "/images/divisions/psdm/members/sutanto.JPG"
       },
       {
         id: 4,
         name: "Cindy",
         role: "Anggota",
-        imageUrl: "/images/divisions/psdm/members/cindy.jpg"
+        imageUrl: "/images/divisions/psdm/members/cindy.JPG"
       },
       {
         id: 5,
         name: "Chaterine",
         role: "Anggota",
-        imageUrl: "/images/divisions/psdm/members/chaterine.jpg"
+        imageUrl: "/images/divisions/psdm/members/chaterine.JPG"
       },
       {
         id: 6,
         name: "Arya",
         role: "Anggota",
-        imageUrl: "/images/divisions/psdm/members/arya.jpg"
+        imageUrl: "/images/divisions/psdm/members/arya.JPG"
       },
       {
         id: 7,
         name: "Panji",
         role: "Anggota",
-        imageUrl: "/images/divisions/psdm/members/panji.jpg"
+        imageUrl: "/images/divisions/psdm/members/panji.JPG"
       },
       {
         id: 8,
         name: "Nabila",
         role: "Anggota",
-        imageUrl: "/images/divisions/psdm/members/nabila.jpg"
+        imageUrl: "/images/divisions/psdm/members/nabila.JPG"
       },
       {
         id: 9,
         name: "Nazwar",
         role: "Anggota",
-        imageUrl: "/images/divisions/psdm/members/nazwar.jpg"
+        imageUrl: "/images/divisions/psdm/members/nazwar.JPG"
       },
       {
         id: 10,
         name: "Andrian",
         role: "Anggota",
-        imageUrl: "/images/divisions/psdm/members/andrian.jpg"
+        imageUrl: "/images/divisions/psdm/members/andrian.JPG"
       },
     ],
   },
@@ -101,49 +101,49 @@ export const DIVISIONS: Division[] = [
     description: "Penelitian dan Pengembangan bertanggung jawab atas riset teknologi dan inovasi organisasi.",
     longDescription:
       "Divisi Litbang berfokus pada kegiatan penelitian, pengembangan produk teknologi, serta inovasi yang dapat mendukung kemajuan organisasi.",
-    imageUrl: "/images/divisions/litbang/cover_litbang.jpg",
+    imageUrl: "/images/divisions/litbang/cover_litbang.JPG",
     members: [
       {
         id: 1,
         name: "Brisbane dan Susi",
         role: "Koordinator dan Sekretaris",
-        imageUrl: "/images/divisions/litbang/members/bane_susi.jpg"
+        imageUrl: "/images/divisions/litbang/members/bane_susi.JPG"
       },
       {
         id: 2,
         name: "Patra",
         role: "Anggota",
-        imageUrl: "/images/divisions/litbang/members/patra.jpg"
+        imageUrl: "/images/divisions/litbang/members/patra.JPG"
       },
       {
         id: 3,
         name: "Marialise",
         role: "Anggota",
-        imageUrl: "/images/divisions/litbang/members/marialise.jpg"
+        imageUrl: "/images/divisions/litbang/members/marialise.JPG"
       },
       {
         id: 4,
         name: "Carlos",
         role: "Anggota",
-        imageUrl: "/images/divisions/litbang/members/carlos.jpg"
+        imageUrl: "/images/divisions/litbang/members/carlos.JPG"
       },
       {
         id: 5,
         name: "Kelly",
         role: "Anggota",
-        imageUrl: "/images/divisions/litbang/members/kelly.jpg"
+        imageUrl: "/images/divisions/litbang/members/kelly.JPG"
       },
       {
         id: 6,
         name: "Pangeran",
         role: "Anggota",
-        imageUrl: "/images/divisions/litbang/members/pangeran.jpg"
+        imageUrl: "/images/divisions/litbang/members/pangeran.JPG"
       },
       {
         id: 7,
         name: "Vincent",
         role: "Anggota",
-        imageUrl: "/images/divisions/litbang/members/vincent.jpg"
+        imageUrl: "/images/divisions/litbang/members/vincent.JPG"
       },
     ],
   },
@@ -153,49 +153,49 @@ export const DIVISIONS: Division[] = [
     description: "Mengelola sosial media, dokumentasi kegiatan, dan branding HIMATIF.",
     longDescription:
       "Divisi Kominfo bertugas mengelola media sosial, dokumentasi visual, serta menjaga citra dan branding HIMATIF di ranah digital.",
-    imageUrl: "/images/divisions/mulkominfo/cover_mulkominfo.jpg",
+    imageUrl: "/images/divisions/mulkominfo/cover_mulkominfo.JPG",
     members: [
       {
         id: 1,
         name: "Rayza dan Adelia",
         role: "Koordinator dan Sekretaris",
-        imageUrl: "/images/divisions/mulkominfo/members/rayza_adelia.jpg"
+        imageUrl: "/images/divisions/mulkominfo/members/rayza_adelia.JPG"
       },
       {
         id: 2,
         name: "Rangga",
         role: "Anggota",
-        imageUrl: "/images/divisions/mulkominfo/members/rangga.jpg"
+        imageUrl: "/images/divisions/mulkominfo/members/rangga.JPG"
       },
       {
         id: 3,
         name: "Melody",
         role: "Anggota",
-        imageUrl: "/images/divisions/mulkominfo/members/melody.jpg"
+        imageUrl: "/images/divisions/mulkominfo/members/melody.JPG"
       },
       {
         id: 4,
         name: "Cindy",
         role: "Anggota",
-        imageUrl: "/images/divisions/mulkominfo/members/cindy.jpg"
+        imageUrl: "/images/divisions/mulkominfo/members/cindy.JPG"
       },
       {
         id: 5,
         name: "Mawaddah",
         role: "Anggota",
-        imageUrl: "/images/divisions/mulkominfo/members/mawaddah.jpg"
+        imageUrl: "/images/divisions/mulkominfo/members/mawaddah.JPG"
       },
       {
         id: 6,
         name: "Halila",
         role: "Anggota",
-        imageUrl: "/images/divisions/mulkominfo/members/halila.jpg"
+        imageUrl: "/images/divisions/mulkominfo/members/halila.JPG"
       },
       {
         id: 7,
         name: "Sanny",
         role: "Anggota",
-        imageUrl: "/images/divisions/mulkominfo/members/sanny.jpg"
+        imageUrl: "/images/divisions/mulkominfo/members/sanny.JPG"
       },
     ],
   },
@@ -205,79 +205,79 @@ export const DIVISIONS: Division[] = [
     description: "Menampung dan menyalurkan minat bakat mahasiswa di bidang olahraga dan kesenian.",
     longDescription:
       "Divisi Olahraga & Seni mewadahi minat bakat mahasiswa dalam bidang olahraga, musik, tari, dan seni pertunjukan lainnya.",
-    imageUrl: "/images/divisions/olsen/cover_olsen.jpg",
+    imageUrl: "/images/divisions/olsen/cover_olsen.JPG",
     members: [
       {
         id: 1,
         name: "Travy dan Victor",
         role: "Koordinator dan Sekretaris",
-        imageUrl: "/images/divisions/olsen/members/travy_victor.jpg"
+        imageUrl: "/images/divisions/olsen/members/travy_victor.JPG"
       },
       {
         id: 2,
         name: "Ubay",
         role: "Anggota",
-        imageUrl: "/images/divisions/olsen/members/ubay.jpg"
+        imageUrl: "/images/divisions/olsen/members/ubay.JPG"
       },
       {
         id: 3,
         name: "Geri",
         role: "Anggota",
-        imageUrl: "/images/divisions/olsen/members/geri.jpg"
+        imageUrl: "/images/divisions/olsen/members/geri.JPG"
       },
       {
         id: 4,
         name: "Rasyiqah",
         role: "Anggota",
-        imageUrl: "/images/divisions/olsen/members/rasyiqah.jpg"
+        imageUrl: "/images/divisions/olsen/members/rasyiqah.JPG"
       },
       {
         id: 5,
         name: "Daffa",
         role: "Anggota",
-        imageUrl: "/images/divisions/olsen/members/daffa.jpg"
+        imageUrl: "/images/divisions/olsen/members/daffa.JPG"
       },
       {
         id: 6,
         name: "Hasbi",
         role: "Anggota",
-        imageUrl: "/images/divisions/olsen/members/hasbi.jpg"
+        imageUrl: "/images/divisions/olsen/members/hasbi.JPG"
       },
       {
         id: 7,
         name: "Rafi",
         role: "Anggota",
-        imageUrl: "/images/divisions/olsen/members/rafi.jpg"
+        imageUrl: "/images/divisions/olsen/members/rafi.JPG"
       },
       {
         id: 8,
         name: "Aldi",
         role: "Anggota",
-        imageUrl: "/images/divisions/olsen/members/zaki.jpg"
+        imageUrl: "/images/divisions/olsen/members/zaki.JPG"
       },
       {
         id: 9,
         name: "Anggie",
         role: "Anggota",
-        imageUrl: "/images/divisions/olsen/members/anggie.jpg"
+        imageUrl: "/images/divisions/olsen/members/anggie.JPG"
       },
       {
         id: 10,
         name: "Sofwan",
         role: "Anggota",
-        imageUrl: "/images/divisions/olsen/members/sofwan.jpg"
+        imageUrl: "/images/divisions/olsen/members/sofwan.JPG"
       },
       {
         id: 11,
         name: "Aldrik",
         role: "Anggota",
-        imageUrl: "/images/divisions/olsen/members/aldrik.jpg"
+        imageUrl: "/images/divisions/olsen/members/aldrik.JPG"
       },
       {
         id: 12,
         name: "Abyan",
         role: "Anggota",
-        imageUrl: "/images/divisions/olsen/members/abyan.jpg"
+        imageUrl: "/images/divisions/olsen/members/abyan.JPG"
       },
     ],
   },
@@ -293,31 +293,31 @@ export const DIVISIONS: Division[] = [
         id: 1,
         name: "Zahra dan Ilma",
         role: "Koordinator dan Sekretaris",
-        imageUrl: "/images/divisions/um/members/zahra_ilma.jpg"
+        imageUrl: "/images/divisions/um/members/zahra_ilma.JPG"
       },
       {
         id: 2,
         name: "Nazwa",
         role: "Anggota",
-        imageUrl: "/images/divisions/um/members/nazwa.jpg"
+        imageUrl: "/images/divisions/um/members/nazwa.JPG"
       },
       {
         id: 3,
         name: "Roofi",
         role: "Anggota",
-        imageUrl: "/images/divisions/um/members/roofi.jpg"
+        imageUrl: "/images/divisions/um/members/roofi.JPG"
       },
       {
         id: 4,
         name: "Nabil",
         role: "Anggota",
-        imageUrl: "/images/divisions/um/members/nabil.jpg"
+        imageUrl: "/images/divisions/um/members/nabil.JPG"
       },
       {
         id: 5,
         name: "Rizky",
         role: "Anggota",
-        imageUrl: "/images/divisions/um/members/rizky.jpg"
+        imageUrl: "/images/divisions/um/members/rizky.JPG"
       },
     ],
   },
@@ -327,55 +327,55 @@ export const DIVISIONS: Division[] = [
     description: "Membangun karakter mahasiswa yang beriman dan bertaqwa melalui kegiatan keagamaan.",
     longDescription:
       "Divisi Rohani membina karakter spiritual mahasiswa melalui kajian rutin, bakti sosial, dan kegiatan keagamaan lainnya.",
-    imageUrl: "/images/divisions/rohani/cover_rohani.jpg",
+    imageUrl: "/images/divisions/rohani/cover_rohani.JPG",
     members: [
       {
         id: 1,
         name: "Mayadi dan Putri",
         role: "Koordinator dan Sekretaris",
-        imageUrl: "/images/divisions/rohani/members/mayadi_putri.jpg"
+        imageUrl: "/images/divisions/rohani/members/mayadi_putri.JPG"
       },
       {
         id: 2,
         name: "Arialdi",
         role: "Anggota",
-        imageUrl: "/images/divisions/rohani/members/arialdi.jpg"
+        imageUrl: "/images/divisions/rohani/members/arialdi.JPG"
       },
       {
         id: 3,
         name: "Haya",
         role: "Anggota",
-        imageUrl: "/images/divisions/rohani/members/rohaya.jpg"
+        imageUrl: "/images/divisions/rohani/members/rohaya.JPG"
       },
       {
         id: 4,
         name: "Davina",
         role: "Anggota",
-        imageUrl: "/images/divisions/rohani/members/davina.jpg"
+        imageUrl: "/images/divisions/rohani/members/davina.JPG"
       },
       {
         id: 5,
         name: "Rizna",
         role: "Anggota",
-        imageUrl: "/images/divisions/rohani/members/rizna.jpg"
+        imageUrl: "/images/divisions/rohani/members/rizna.JPG"
       },
       {
         id: 6,
         name: "Louis",
         role: "Anggota",
-        imageUrl: "/images/divisions/rohani/members/louis.jpg"
+        imageUrl: "/images/divisions/rohani/members/louis.JPG"
       },
       {
         id: 7,
         name: "Grace",
         role: "Anggota",
-        imageUrl: "/images/divisions/rohani/members/grace.jpg"
+        imageUrl: "/images/divisions/rohani/members/grace.JPG"
       },
       {
         id: 8,
         name: "Jelita",
         role: "Anggota",
-        imageUrl: "/images/divisions/rohani/members/jelita.jpg"
+        imageUrl: "/images/divisions/rohani/members/jelita.JPG"
       },
       {
         id: 9,
@@ -387,19 +387,19 @@ export const DIVISIONS: Division[] = [
         id: 10,
         name: "Refael",
         role: "Anggota",
-        imageUrl: "/images/divisions/rohani/members/refael.jpg"
+        imageUrl: "/images/divisions/rohani/members/refael.JPG"
       },
       {
         id: 11,
         name: "Irene",
         role: "Anggota",
-        imageUrl: "/images/divisions/rohani/members/irene.jpg"
+        imageUrl: "/images/divisions/rohani/members/irene.JPG"
       },
       {
         id: 12,
         name: "Kenward",
         role: "Anggota",
-        imageUrl: "/images/divisions/rohani/members/kenward.jpg"
+        imageUrl: "/images/divisions/rohani/members/kenward.JPG"
       },
     ],
   },
@@ -418,7 +418,7 @@ export const EVENTS: EventItem[] = [
     title: "Latihan Kepemimpinan",
     date: "18 Oktober 2025",
     description: "Pelatihan kepemimpinan untuk calon pengurus HIMATIF.",
-    imageUrl: "/images/lk.jpg"
+    imageUrl: "/images/lk.JPG"
   },
   {
     id: 3,
